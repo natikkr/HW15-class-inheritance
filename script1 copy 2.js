@@ -10,7 +10,7 @@ Clock.prototype.render = function () {
 };
 
 function ClockFull(element){
-    Clock.call(element)
+    Clock.call(this, element)
 }
 
 ClockFull.prototype = Object.create (Clock.prototype)
@@ -24,7 +24,7 @@ ClockFull.prototype.render = function () {
 };
 
 function ClockForm (element){
-    Clock.call(element)
+    Clock.call(this, element)
 }
 
 ClockForm.prototype = Object.create (Clock.prototype)
